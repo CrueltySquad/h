@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Engine</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #urlForm {
+            background-color: white;
+            color: black;
+            padding: 0.5rem;
+            border-radius: 5px;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #urlInput {
+            width: 80%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #428bca;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://static-00.iconduck.com/assets.00/google-icon-256x256-v1fqwvqr.png" alt="Google logo" width="100" height="100">
+    <h1>Simple Search Engine</h1>
+    <form id="urlForm" action="/search" method="GET">
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" name="url" placeholder="https://example.com" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+
+</html>
